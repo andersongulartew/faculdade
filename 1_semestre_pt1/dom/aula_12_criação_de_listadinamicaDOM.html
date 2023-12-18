@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista dinamica DOM</title>
+</head>
+<body>
+    <ul class="lista">
+
+    </ul>
+</body>
+<script>
+    time = ["Real Madrid","Atletico","Juventus","Barcelona"]
+
+    var listadetime = document.querySelector('ul.lista')
+
+    for (var i = 0; i < time.length; i++) {
+        var times = time[i];
+        var listItem = document.createElement('li');
+        listItem.innerText = time;
+        listItem.style.border =  '1px solid blue';
+        listadetime.appendChild(listItem)
+        
+    }
+
+
+
+</script>
+</html>

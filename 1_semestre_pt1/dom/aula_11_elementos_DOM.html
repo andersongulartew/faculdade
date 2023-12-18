@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elemento do DOM exemplo 1</title>
+</head>
+<body>
+
+    <button onclick="confirma()">Excluir Item</button>
+
+</body>
+    <script>
+        // window.alert("Nosso Primeiro Alert")
+
+        // window.confirm("voce deseja Excluir este item")
+
+        // window.prompt("Qual é o seu Nome ?")
+
+
+
+
+        // **** NUMBER SOMA OS NUMEROS
+       //var num1 = Number (window.prompt("favor digitar um numero :"))
+
+       //var num2 =  Number (window.prompt("favor digita outro numero numero :"))
+        
+       //var soma = num1+num2
+
+       //window.alert (`a soma dos numero é ${soma}`)
+
+
+       
+       // ****STRING SÓ JUNTA A INFORMAÇÃO
+
+       //var nome = window.prompt("Digite seu Nome :")
+
+       //var sobrenome =  window.prompt("Digte seu Sobrenome :")
+        
+       //var soma= nome.toUpperCase() + sobrenome.toUpperCase()
+
+      // window.alert (`Seu nome Completo é :  ${soma}`)
+       //forma 2 de se juntar(concatenar)
+      //window.alert ("Seu nome Completo é :" + nome.toUpperCase() + " " + sobrenome.toUpperCase())
+
+
+        // **** FUNÇÃO CONFIRM
+      function confirma(){
+        let ok = confirm("voce deseja excluir este item ?")
+        if(ok){
+            alert('você ira excluir o item')
+        }else{
+            alert("Operação foi cancelada")
+        }
+      }
+    </script>
+
+</html>
