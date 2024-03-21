@@ -12,4 +12,4 @@ class Pessoa:
         return type(self)._contador
     p1 = Pessoa("carlos", 18)
     print(p1.contador)
-    print(Pessoa._contador).
+    print(Pessoa._contador)
