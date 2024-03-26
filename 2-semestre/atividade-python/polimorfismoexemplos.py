@@ -22,14 +22,14 @@ for pais in (obj_arg, obj_bra):
 
 ##########################
 
-# class Veiculo:
-#     def rodar(self):
-#         print("Reduz o consumo de combsutivel")
-#
-# class VeiculoEletrico(Veiculo):
-#     def rodar(self):
-#         super().rodar()
-#         print("Esse veiculo utiliza eletricidade")
-#
-# veiculo_eletrico = VeiculoEletrico()
-# veiculo_eletrico.rodar()
+class Veiculo:
+    def rodar(self):
+        print("Reduz o consumo de combsutivel")
+
+class VeiculoEletrico(Veiculo):
+    def rodar(self):
+        super().rodar()
+        print("Esse veiculo utiliza eletricidade")
+
+veiculo_eletrico = VeiculoEletrico()
+veiculo_eletrico.rodar()
