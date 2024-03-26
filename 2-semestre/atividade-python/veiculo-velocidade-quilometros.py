@@ -10,20 +10,20 @@ class Veiculo:
     def capacidade_assento(self, capacidade):
         print(f'A capacidade maxima de assentos do veiculo {self.nome} é {capacidade}')
 
-    def toStr(self):
+    def infor(self):
         print(f'nome = {self.nome}')
         print(f'velocidade_max = {self.velocidade_max}')
         print(f'quilometros percorrido por litros = {self.quilometro_litro}')
 
 modelo_carro = Veiculo("Fusca", 180, 10)
-modelo_carro.toStr()
+modelo_carro.infor()
 
 #crie uma classe filha "Onibus" que herdara todas as variaveis e metodos da classe "veiculo"
 class Onibus(Veiculo):
     pass
 
 onibus = Onibus("Scania", 120, 8)
-onibus.toStr()
+onibus.infor()
 
 
 #modificar a classe filha"onibus", de modo que,
@@ -34,7 +34,7 @@ class Onibus(Veiculo):
         return super().capacidade_assento(capacidade = 70)
 
 onibus = Onibus("Scania", 120, 8)
-onibus.toStr()
+onibus.infor()
 onibus.capacidade_assento()
 
 
