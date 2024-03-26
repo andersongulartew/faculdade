@@ -19,11 +19,16 @@ modelo_carro = Veiculo("Fusca", 180, 10)
 modelo_carro.toStr()
 
 #crie uma classe filha "Onibus" que herdara todas as variaveis e metodos da classe "veiculo"
+class Onibus(Veiculo):
+    pass
+
+onibus = Onibus("Scania", 120, 8)
+onibus.toStr()
+
 
 #modificar a classe filha"onibus", de modo que,
 #ela forneca a quantidade de assento.
 #alem disso, o valor desse parametro deve ser 70
-
 class Onibus(Veiculo):
     def capacidade_assento(self, capacidade = 70):
         return super().capacidade_assento(capacidade = 70)
