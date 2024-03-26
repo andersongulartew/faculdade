@@ -23,8 +23,8 @@
     #########################################
 
 from datetime import date
-class Pessoas:
-    def Pessoa(self,nome,idade):
+class Pessoa:
+    def __init__(self,nome,idade):
         self.nome = nome
         self.idade = idade
 
@@ -36,12 +36,12 @@ class Pessoas:
     def ehMaiorIdade(idade):
         return idade >= 18
 
-    pessoa1 = Pessoa('maria',26)
-    pessoa2 = Pessoa.apartirAnoNascimento('ana', 2006)
+pessoa1 = Pessoa('maria',26)
+pessoa2 = Pessoa.apartirAnoNascimento('ana', 2006)
 
-    print(pessoa1.idade)
-    print(pessoa2.idade)
+print(pessoa1.idade)
+print(pessoa2.idade)
 
-    print(Pessoa.ehMaiorIdade(17))
+print(Pessoa.ehMaiorIdade(17))
 
 
